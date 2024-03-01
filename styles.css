@@ -1,0 +1,257 @@
+.navbar, .dropdown-menu {
+    background-color: steelblue;
+}
+
+.dropdown-menu a:hover {
+    background-color: orange;
+}
+
+.nav-icons .fas:hover {
+    color: orange;
+}
+
+.jumbotron {
+    background: url(https://cat-world.com/wp-content/uploads/2017/04/can-cats-eat-dog-food-1.jpg);
+    grid-template-columns: repeat(auto-fit, minmax(17rem, auto));
+    background-repeat: no-repeat;
+    background-position: center;
+    background-size: cover;
+    height: 100vh;
+}
+
+/** signup and login form styles **/
+.signup-form {
+    display: none;
+}
+
+.form-container.active .signup-form {
+    display: block;
+}
+
+.form-container.active .login-form {
+    display: none;
+}
+
+#message, #matchAlert, #dupAlert {
+    display: none;
+}
+
+/* Add a green text color and a checkmark when the requirements are right */
+.valid {
+    color: green;
+}
+
+.valid:before {
+    position: relative;
+    left: -35px;
+    content: "✔";
+}
+
+/* Add a red text color and an "x" when the requirements are wrong */
+.invalid {
+    color: red;
+}
+
+.invalid:before {
+    position: relative;
+    left: -35px;
+    content: "✖";
+}
+
+.item-list {
+    width: 100%;
+	margin-top: 3rem;
+}
+
+.card-container {
+	grid-template-columns: auto auto auto;
+}
+
+.card-img-top {
+	object-fit: cover;
+	height: 100%;
+	position: relative;
+}
+
+/*Shopping Start*/
+.slider .shopping-cart{
+    position: absolute;
+    display: none;
+    top: 60px;
+    right: -50%;
+    padding: 1rem;
+    border-radius: .5rem;
+    box-shadow: var(--box-shadow);
+    width: 30rem;
+    background: steelblue;
+}
+
+.slider .shopping-cart.active{
+    display: block;
+    right: 0;
+    transition: .4s linear;
+}
+
+.slider .shopping-cart .item-box {
+    display: grid;
+    grid-template-columns: 50px 150px 0 auto;
+    gap: 0;
+    text-align: center;
+    align-items: center;
+}
+
+.slider .shopping-cart .item-box .quantity span {
+    display: inline-block;
+    width: 25px;
+    height: 25px;
+    background-color: white;
+    color: #555;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.slider .shopping-cart .item-box .quantity span:nth-child(2) {
+    background-color: transparent;
+    color: #eee;
+}
+
+.slider .shopping-cart .item-box:nth-child(even){
+    background-color: lightblue;
+}
+
+/*footer*/
+.footer{
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: steelblue;
+    color: white;
+    text-align: center;
+    padding: 10px 0;
+    z-index: 999;
+}
+
+.footer .box-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(19rem, 1fr));
+    gap: 1.2rem;
+}
+
+.footer .box-container .box h3{
+    font-size: 1.5rem;
+    color:var(--pawsha);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box h3 i{
+    color: var(--orange);
+}
+
+.footer .box-container .box .links{
+    display: block;
+    font-size: 1.2rem;
+    color: var(--white);
+    padding: .5rem 0;
+}
+
+.footer .box-container .box .links i{
+    color: var(--orange);
+    padding-right: .5rem;
+}
+
+.footer .box-container .box .links:hover i{
+    padding-right: 2rem;
+    color: var(--pawsha);
+}
+
+.footer .box-container .box p{
+    line-height: 1.5;
+    font-size: 1.3rem;
+    color: var(--white);
+    padding: 1rem 0;
+}
+
+.footer .box-container .box .share a{
+    height: 2rem;
+    width: 3rem;
+    line-height: 2rem;
+    border-radius: .5rem;
+    font-size: 1.5rem;
+    color: var(--black);
+    margin-left: .2rem;
+    background: #eee;
+    text-align: center;
+}
+
+.footer .box-container .box .share a:hover{
+    background: var(--orange);
+    color: #fff;
+}
+
+.footer .box-container .box .email{
+    width: 60%;
+    margin: .7rem 0;
+    padding: 1rem;
+    border-radius: .5rem;
+    background: #eee;
+    font-size: 0.9rem;
+    color: var(--black);
+    text-transform: none;
+}
+
+.footer .box-container .box .payment-img{
+    margin-top: 2rem;
+    height: 5rem;
+}
+
+.footer .credit{
+    text-align: center;
+    margin-top: 2rem;
+    padding: 1rem;
+    padding-top: 2.5rem;
+    font-size: 1.2rem;
+    color: var(--white);
+}
+
+.footer .credit span{
+    color:var(--pawsha);
+}
+
+@media (max-width: 575px) {
+    .navbar, .dropdown-menu {
+        background-color: steelblue;
+    }
+    /* Navbar and dropdown menu text color */
+    .navbar-brand, .nav-link, .dropdown-item {
+        color: white;
+    }
+
+    /* Navbar toggler color */
+    .navbar-toggler-icon {
+        color: white;
+    }
+
+    /* Navbar icons color */
+    .nav-icons .fas {
+        color: white;
+    }
+
+    /* Footer styles */
+    .footer {
+        position: static;
+    }
+}
+
+@media (max-width: 768px) {
+   
+}
+
+@media (max-width: 992px) {
+    
+}
+
+
+@media (min-width: 1200px) {
+    
+}
